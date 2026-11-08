@@ -30,10 +30,8 @@
     .success { font-size: 12px; fill: #34d399; font-weight: 500; }
   </style>
 
-  <!-- Chassis Frame -->
   <rect x="1" y="1" width="818" height="268" rx="8" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5" />
 
-  <!-- Top Laser Hairline Accent -->
   <g clip-path="url(#border-clip)">
     <clipPath id="border-clip">
       <rect x="1" y="1" width="818" height="3" rx="1" />
@@ -41,47 +39,41 @@
     <rect class="laser-line" x="0" y="1" width="400" height="1.5" fill="url(#laser)" />
   </g>
 
-  <!-- Window Header -->
   <line x1="1" y1="38" x2="819" y2="38" stroke="#1e293b" stroke-width="1" />
   <circle cx="22" cy="19" r="4.5" fill="#334155" />
   <circle cx="38" cy="19" r="4.5" fill="#334155" />
   <circle cx="54" cy="19" r="4.5" fill="#334155" />
   <text class="mono dim" x="410" y="23" text-anchor="middle" font-size="11">system-profile — zsh — 80x24</text>
 
-  <!-- Prompt Command -->
   <text class="mono path" x="24" y="70">waleed@systems</text>
   <text class="mono dim" x="145" y="70">:</text>
   <text class="mono path" x="155" y="70">~</text>
   <text class="mono dim" x="170" y="70">$</text>
   <text class="mono cmd" x="185" y="70">sysinfo --target=architecture</text>
 
-  <!-- Architecture Specs Output -->
   <g transform="translate(24, 105)">
-    <!-- Role -->
     <text class="mono label" x="0" y="0">ROLE</text>
     <text class="mono dim" x="110" y="0">→</text>
-    <text class="mono val" x="130" y="0">Software Engineer &amp; Full-Stack Developer</text>
+    <text class="mono val" x="130" y="0">Computer Engineer &amp; Full-Stack Developer</text>
 
-    <!-- Core Stack -->
     <text class="mono label" x="0" y="26">STACK</text>
     <text class="mono dim" x="110" y="26">→</text>
-    <text class="mono accent" x="130" y="26">TypeScript <tspan fill="#64748b">·</tspan> Next.js <tspan fill="#64748b">·</tspan> Node.js <tspan fill="#64748b">·</tspan> C++ <tspan fill="#64748b">·</tspan> SQL</text>
+    <text class="mono accent" x="130" y="26">TypeScript <tspan fill="#64748b">·</tspan> Next.js <tspan fill="#64748b">·</tspan> Node.js <tspan fill="#64748b">·</tspan> C/C++ <tspan fill="#64748b">·</tspan> SQL</text>
 
-    <!-- Architecture Focus -->
-    <text class="mono label" x="0" y="52">ENGINEERING</text>
+    <text class="mono label" x="0" y="52">FOCUS</text>
     <text class="mono dim" x="110" y="52">→</text>
-    <text class="mono val" x="130" y="52">Distributed Systems, Data Architecture, Clean Design</text>
+    <text class="mono val" x="130" y="52">Web Applications, Database Design, Low-Level Fundamentals</text>
 
-    <!-- Environment -->
     <text class="mono label" x="0" y="78">ENVIRONMENT</text>
     <text class="mono dim" x="110" y="78">→</text>
-    <text class="mono val" x="130" y="78">Linux <tspan fill="#64748b">·</tspan> Bash <tspan fill="#64748b">·</tspan> Git <tspan fill="#64748b">·</tspan> Vercel</text>
+    <text class="mono val" x="130" y="78">Linux <tspan fill="#64748b">·</tspan> Bash <tspan fill="#64748b">·</tspan> Git <tspan fill="#64748b">·</tspan> PostgreSQL <tspan fill="#64748b">·</tspan> Vercel</text>
 
-    <!-- Status & Pulse -->
-    <text class="mono label" x="0" y="104">SYSTEM</text>
+    <text class="mono label" x="0" y="104">STATUS</text>
     <text class="mono dim" x="110" y="104">→</text>
     <circle class="pulse-dot" cx="135" cy="100" r="3.5" fill="#34d399" />
-    <text class="mono success" x="146" y="104">Operational <tspan fill="#64748b">|</tspan> Available for high-impact projects</text>
-    <rect class="cursor" x="488" y="93" width="7" height="13" />
+    <text class="mono success" x="146" y="104">Active <tspan fill="#64748b">|</tspan> Building practical tools &amp; systems</text>
+    <rect class="cursor" x="424" y="93" width="7" height="13" />
   </g>
+</svg>
+
 </svg>
