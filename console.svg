@@ -19,23 +19,13 @@
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
     @keyframes pulse-slow { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
     @keyframes sweep { 0% { transform: translateX(-880px); } 100% { transform: translateX(880px); } }
-    @keyframes bus-flow {
-      0% { stroke-dashoffset: 32; }
-      100% { stroke-dashoffset: 0; }
-    }
-    @keyframes chip-float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
-    }
+    @keyframes bus-flow { 0% { stroke-dashoffset: 32; } 100% { stroke-dashoffset: 0; } }
+    @keyframes chip-float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
 
     .cursor { animation: blink 1s infinite; fill: #38bdf8; }
     .pulse-dot { animation: pulse-slow 2s infinite ease-in-out; }
     .laser-line { animation: sweep 4.5s infinite cubic-bezier(0.4, 0, 0.2, 1); }
-    .bus-trace {
-      stroke: #38bdf8;
-      stroke-dasharray: 4 4;
-      animation: bus-flow 1.5s linear infinite;
-    }
+    .bus-trace { stroke: #38bdf8; stroke-dasharray: 4 4; animation: bus-flow 1.5s linear infinite; }
     .chip-hover { animation: chip-float 4s ease-in-out infinite; }
 
     .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
@@ -49,7 +39,6 @@
     .tiny { font-size: 10px; fill: #475569; }
     .chip-tag { font-size: 9px; fill: #94a3b8; font-weight: 600; letter-spacing: 0.05em; }
 
-    /* Hairline Isometric Styles */
     .iso-plate { fill: #070c18; stroke: #1e293b; stroke-width: 0.9; }
     .iso-wall-l { fill: #050811; stroke: #1e293b; stroke-width: 0.9; }
     .iso-wall-r { fill: #080e1d; stroke: #1e293b; stroke-width: 0.9; }
@@ -60,10 +49,8 @@
     .iso-grid { stroke: #162238; stroke-width: 0.7; stroke-dasharray: 2 4; }
   </style>
 
-  <!-- Outer Frame Chassis -->
   <rect x="1" y="1" width="878" height="338" rx="8" fill="url(#bg)" stroke="#1e293b" stroke-width="1.2" />
 
-  <!-- Top Laser Sweep Line -->
   <g clip-path="url(#border-clip)">
     <clipPath id="border-clip">
       <rect x="1" y="1" width="878" height="3" rx="1" />
@@ -71,7 +58,6 @@
     <rect class="laser-line" x="0" y="1" width="450" height="1.5" fill="url(#laser)" />
   </g>
 
-  <!-- Top Window Header Bar -->
   <line x1="1" y1="36" x2="879" y2="36" stroke="#1e293b" stroke-width="1" />
   <circle cx="22" cy="18" r="4.5" fill="#334155" />
   <circle cx="38" cy="18" r="4.5" fill="#334155" />
@@ -80,46 +66,37 @@
   <circle class="pulse-dot" cx="848" cy="18" r="3.5" fill="#34d399" />
   <text class="mono tiny" x="836" y="22" text-anchor="end">ONLINE</text>
 
-  <!-- ================= LEFT PANE: SYSTEM PROFILE & CLI ================= -->
   <g transform="translate(24, 62)">
-    <!-- Command Prompt -->
     <text class="mono path" x="0" y="0">waleed@systems</text>
     <text class="mono dim" x="120" y="0">:</text>
     <text class="mono path" x="130" y="0">~</text>
     <text class="mono dim" x="145" y="0">$</text>
     <text class="mono cmd" x="160" y="0">sysinfo --target=architecture --live</text>
 
-    <!-- Info Matrix -->
     <g transform="translate(0, 32)">
-      <!-- Row 1: ROLE -->
       <text class="mono label" x="0" y="0">ROLE</text>
       <text class="mono dim" x="100" y="0">→</text>
       <text class="mono val" x="120" y="0">Computer Engineer · Full-Stack Developer</text>
 
-      <!-- Row 2: STACK -->
       <text class="mono label" x="0" y="25">STACK</text>
       <text class="mono dim" x="100" y="25">→</text>
       <text class="mono accent" x="120" y="25">TypeScript <tspan fill="#64748b">·</tspan> Next.js <tspan fill="#64748b">·</tspan> Node.js <tspan fill="#64748b">·</tspan> C/C++ <tspan fill="#64748b">·</tspan> SQL</text>
 
-      <!-- Row 3: FOCUS -->
       <text class="mono label" x="0" y="50">FOCUS</text>
       <text class="mono dim" x="100" y="50">→</text>
       <text class="mono val" x="120" y="50">Web Applications, Database Design, Low-Level Systems</text>
 
-      <!-- Row 4: ENVIRONMENT -->
       <text class="mono label" x="0" y="75">ENVIRONMENT</text>
       <text class="mono dim" x="100" y="75">→</text>
       <text class="mono val" x="120" y="75">Linux <tspan fill="#64748b">·</tspan> Bash <tspan fill="#64748b">·</tspan> Git <tspan fill="#64748b">·</tspan> PostgreSQL <tspan fill="#64748b">·</tspan> Vercel</text>
 
-      <!-- Row 5: STATUS with corrected end cursor at x=446 -->
       <text class="mono label" x="0" y="100">STATUS</text>
       <text class="mono dim" x="100" y="100">→</text>
       <circle class="pulse-dot" cx="125" cy="96" r="3.5" fill="#34d399" />
       <text class="mono success" x="136" y="100">Active <tspan fill="#64748b">|</tspan> Building practical tools and systems</text>
-      <rect class="cursor" x="478" y="93" width="7" height="13" />  
+      <rect class="cursor" x="446" y="89" width="7" height="13" />
     </g>
 
-    <!-- Bottom Telemetry Pod in Left Pane -->
     <g transform="translate(0, 192)">
       <line x1="0" y1="0" x2="440" y2="0" stroke="#172338" stroke-width="1" />
       <text class="mono tiny" x="0" y="18">SYS-METRICS</text>
@@ -130,42 +107,30 @@
     </g>
   </g>
 
-  <!-- ================= VERTICAL DIVIDER ================= -->
   <line x1="490" y1="48" x2="490" y2="320" stroke="#162238" stroke-width="1" stroke-dasharray="2 3" />
   <circle cx="490" cy="56" r="2" fill="#38bdf8" />
   <circle cx="490" cy="312" r="2" fill="#38bdf8" />
 
-  <!-- ================= RIGHT PANE: ISOMETRIC SILICON & ARCHITECTURE CORE ================= -->
   <g transform="translate(685, 192)">
-    
-    <!-- Top Legend of Right Pane -->
     <text class="mono tiny" x="-170" y="-120" text-anchor="start">TOPOLOGY :: SILICON HARDWARE TO WEB</text>
     <text class="mono tiny" x="170" y="-120" text-anchor="end" fill="#38bdf8">CLK: SYNC</text>
 
-    <!-- Ground Plinth / Substrate Base (240x120 isometric) -->
     <g>
-      <!-- Base Slab Top -->
       <polygon class="iso-plate" points="0,-60 140,10 0,80 -140,10" />
-      <!-- Base Left Wall -->
       <polygon class="iso-wall-l" points="-140,10 0,80 0,92 -140,22" />
-      <!-- Base Right Wall -->
       <polygon class="iso-wall-r" points="0,80 140,10 140,22 0,92" />
 
-      <!-- Isometric Grid Lines on Substrate -->
       <line class="iso-grid" x1="-100" y1="-10" x2="40" y2="60" />
       <line class="iso-grid" x1="-60" y1="-30" x2="80" y2="40" />
       <line class="iso-grid" x1="100" y1="-10" x2="-40" y2="60" />
       <line class="iso-grid" x1="60" y1="-30" x2="-80" y2="40" />
     </g>
 
-    <!-- PCB Traces on Base (Corner routes to outer bus) -->
     <path class="bus-trace" d="M -120,0 L -70,25 L -45,12" fill="none" />
     <path class="bus-trace" d="M 120,0 L 70,25 L 45,12" fill="none" />
     <path class="bus-trace" d="M 0,-50 L 0,-25" fill="none" />
     <path class="bus-trace" d="M 0,70 L 0,45" fill="none" />
 
-    <!-- 4 SATELLITE MEMORY / LOGIC BANKS (Hairline Isometric blocks) -->
-    <!-- Bank 1: North-West (C/C++ & POSIX) -->
     <g transform="translate(-62, -22)">
       <polygon class="iso-bank" points="0,-12 26,1 0,14 -26,1" />
       <polygon class="iso-wall-l" points="-26,1 0,14 0,18 -26,5" />
@@ -173,7 +138,6 @@
       <text class="mono chip-tag" x="0" y="3" text-anchor="middle">C/C++</text>
     </g>
 
-    <!-- Bank 2: North-East (Kernel & OS) -->
     <g transform="translate(62, -22)">
       <polygon class="iso-bank" points="0,-12 26,1 0,14 -26,1" />
       <polygon class="iso-wall-l" points="-26,1 0,14 0,18 -26,5" />
@@ -181,7 +145,6 @@
       <text class="mono chip-tag" x="0" y="3" text-anchor="middle">LINUX</text>
     </g>
 
-    <!-- Bank 3: South-East (PostgreSQL Data) -->
     <g transform="translate(62, 38)">
       <polygon class="iso-bank" points="0,-12 26,1 0,14 -26,1" />
       <polygon class="iso-wall-l" points="-26,1 0,14 0,18 -26,5" />
@@ -189,7 +152,6 @@
       <text class="mono chip-tag" x="0" y="3" text-anchor="middle">SQL/DB</text>
     </g>
 
-    <!-- Bank 4: South-West (Next.js & Edge Web) -->
     <g transform="translate(-62, 38)">
       <polygon class="iso-bank" points="0,-12 26,1 0,14 -26,1" />
       <polygon class="iso-wall-l" points="-26,1 0,14 0,18 -26,5" />
@@ -197,36 +159,22 @@
       <text class="mono chip-tag" x="0" y="3" text-anchor="middle">NEXT.JS</text>
     </g>
 
-    <!-- CENTRAL HARDWARE SILICON DIE (Elevated Floating Processor Package) -->
     <g class="chip-hover" transform="translate(0, 8)">
-      <!-- Central Package Shadow / Interposer -->
       <polygon points="0,-32 48,-8 0,16 -48,-8" fill="#03060d" stroke="#16233b" stroke-width="0.8" />
-
-      <!-- Main Die Pedestal -->
       <polygon class="iso-die-l" points="-42,-14 0,7 0,16 -42,-5" />
       <polygon class="iso-die-r" points="0,7 42,-14 42,-5 0,16" />
-      <!-- Main Die Top Surface -->
       <polygon class="iso-die-top" points="0,-35 42,-14 0,7 -42,-14" />
-
-      <!-- Internal Inset Core (Hairline Inset Crease) -->
       <polygon points="0,-27 30,-12 0,3 -30,-12" fill="url(#core-glow)" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 2" />
-
-      <!-- Active Core Crystal / Beacon -->
       <circle class="pulse-dot" cx="0" cy="-12" r="3.5" fill="#38bdf8" />
       <circle cx="0" cy="-12" r="1.5" fill="#f8fafc" />
-
-      <!-- Die Silk Screen Text -->
       <text class="mono chip-tag" x="0" y="-18" text-anchor="middle" fill="#38bdf8" font-size="8">CORE-ARCH</text>
       <text class="mono tiny" x="0" y="-4" text-anchor="middle" font-size="7.5" fill="#64748b">WALEED-CE</text>
-
-      <!-- Connecting Bus Beams to Banks -->
       <line class="bus-trace" x1="-24" y1="-18" x2="-48" y2="-20" />
       <line class="bus-trace" x1="24" y1="-18" x2="48" y2="-20" />
       <line class="bus-trace" x1="-24" y1="-6" x2="-48" y2="28" />
       <line class="bus-trace" x1="24" y1="-6" x2="48" y2="28" />
     </g>
 
-    <!-- Lower Status Readout of Right Pane -->
     <text class="mono tiny" x="0" y="116" text-anchor="middle">
       <tspan fill="#38bdf8">ARCHITECTURE:</tspan> LOW-LEVEL HARDWARE <tspan fill="#64748b">⇄</tspan> HIGH-PERF CLOUD
     </text>
