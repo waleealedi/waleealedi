@@ -1,11 +1,5 @@
 <div align="center">
-  <img src="./terminal.svg" alt="Waleed's Terminal System" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="./architecture-stack.svg" alt="Systems Architecture Stack" width="100%" />
+  <img src="./console.svg" alt="Waleed's Engineering Console" width="100%" />
 </div>
 
 <br/>
