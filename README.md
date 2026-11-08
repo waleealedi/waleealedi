@@ -1,9 +1,11 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/waleealedi/waleealedi/main/terminal.svg?v=1" alt="Waleed's Terminal System" width="100%" />
+  <img src="./terminal.svg" alt="Waleed's Terminal System" width="100%" />
 </div>
 
+<br/>
+
 ### About Me
-I am a Computer engineering student working on full-stack web development and systems programming. I focus on building practical tools, writing maintainable code, and understanding low-level fundamentals.
+I am a Computer Engineer working on full-stack web development and systems programming. I focus on building practical tools, writing maintainable code, and understanding low-level fundamentals.
 
 - Building web applications with TypeScript, Next.js, and Node.js.
 - Designing databases and APIs with PostgreSQL, MySQL, and Prisma.
