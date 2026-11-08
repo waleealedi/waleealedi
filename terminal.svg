@@ -72,7 +72,7 @@
     <text class="mono dim" x="110" y="104">→</text>
     <circle class="pulse-dot" cx="135" cy="100" r="3.5" fill="#34d399" />
     <text class="mono success" x="146" y="104">Active <tspan fill="#64748b">|</tspan> Building practical tools and systems</text>
-    <rect class="cursor" x="424" y="93" width="7" height="13" />
+    <rect class="cursor" x="478" y="93" width="7" height="13" />
   </g>
 </svg>
 
