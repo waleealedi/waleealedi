@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 165" width="100%" height="165" fill="none">
+  <defs>
+    <linearGradient id="pipe-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#04070e" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes flow { 0% { stroke-dashoffset: 40; } 100% { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    @keyframes bob-1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @keyframes bob-2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @keyframes bob-3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @keyframes bob-4 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+
+    .c-bob-1 { animation: bob-1 3.2s ease-in-out infinite; }
+    .c-bob-2 { animation: bob-2 3.2s ease-in-out infinite 0.4s; }
+    .c-bob-3 { animation: bob-3 3.2s ease-in-out infinite 0.8s; }
+    .c-bob-4 { animation: bob-4 3.2s ease-in-out infinite 1.2s; }
+
+    .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+    .bus-wire { stroke: #38bdf8; stroke-dasharray: 4 6; animation: flow 1.6s linear infinite; }
+
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .st-title { font-size: 12px; fill: #f1f5f9; font-weight: 600; letter-spacing: 0.04em; }
+
+    .conveyor-top { fill: #070c18; stroke: #1e293b; stroke-width: 0.9; }
+    .conveyor-side-l { fill: #04070e; stroke: #1e293b; stroke-width: 0.9; }
+    .conveyor-side-r { fill: #090f1e; stroke: #1e293b; stroke-width: 0.9; }
+    .roller-dot { fill: #1e293b; }
+    
+    .crate-top { fill: #0f192d; stroke: #38bdf8; stroke-width: 1; }
+    .crate-side-l { fill: #0a1120; stroke: #1e293b; stroke-width: 0.9; }
+    .crate-side-r { fill: #0d1629; stroke: #1e293b; stroke-width: 0.9; }
+    .crate-accent { stroke: #34d399; stroke-width: 1.2; fill: none; }
+  </style>
+
+  <rect x="1" y="1" width="878" height="163" rx="8" fill="url(#pipe-dark)" stroke="#1e293b" stroke-width="1.2" />
+
+  <line x1="1" y1="28" x2="879" y2="28" stroke="#1e293b" stroke-width="0.8" />
+  <circle cx="20" cy="14" r="3.5" fill="#1e293b" />
+  <circle cx="32" cy="14" r="3.5" fill="#1e293b" />
+  <circle cx="44" cy="14" r="3.5" fill="#1e293b" />
+  <text class="mono" x="440" y="18" font-size="10" fill="#64748b" text-anchor="middle">CI/CD PIPELINE :: CONTINUOUS AUTOMATION &amp; DEPLOYMENT</text>
+  <circle class="pulse-dot" cx="850" cy="14" r="3" fill="#34d399" />
+  <text class="mono" x="838" y="18" font-size="9" fill="#94a3b8" text-anchor="end">ALL PASSING</text>
+
+  <line x1="120" y1="88" x2="760" y2="88" stroke="#132034" stroke-width="2" />
+  <line class="bus-wire" x1="120" y1="88" x2="760" y2="88" stroke-width="1.2" />
+
+  <!-- STATION 1: BUILD -->
+  <g transform="translate(130, 96)">
+    <polygon class="conveyor-top" points="0,-18 52,8 0,34 -52,8" />
+    <polygon class="conveyor-side-l" points="-52,8 0,34 0,44 -52,18" />
+    <polygon class="conveyor-side-r" points="0,34 52,8 52,18 0,44" />
+    <circle class="roller-dot" cx="-32" cy="22" r="1.5" />
+    <circle class="roller-dot" cx="-12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="32" cy="22" r="1.5" />
+
+    <g class="c-bob-1" transform="translate(0, -6)">
+      <polygon class="crate-side-l" points="-22,-2 0,9 0,30 -22,19" />
+      <polygon class="crate-side-r" points="0,9 22,-2 22,19 0,30" />
+      <polygon class="crate-top" points="0,-13 22,-2 0,9 -22,-2" />
+      <line x1="0" y1="-13" x2="0" y2="9" stroke="#38bdf8" stroke-width="0.7" stroke-dasharray="2 2" />
+    </g>
+    <text class="mono st-title" x="0" y="58" text-anchor="middle">Build</text>
+  </g>
+
+  <!-- STATION 2: TEST -->
+  <g transform="translate(335, 96)">
+    <polygon class="conveyor-top" points="0,-18 52,8 0,34 -52,8" />
+    <polygon class="conveyor-side-l" points="-52,8 0,34 0,44 -52,18" />
+    <polygon class="conveyor-side-r" points="0,34 52,8 52,18 0,44" />
+    <circle class="roller-dot" cx="-32" cy="22" r="1.5" />
+    <circle class="roller-dot" cx="-12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="32" cy="22" r="1.5" />
+
+    <g class="c-bob-2" transform="translate(0, -6)">
+      <polygon class="crate-side-l" points="-22,-2 0,9 0,30 -22,19" />
+      <polygon class="crate-side-r" points="0,9 22,-2 22,19 0,30" />
+      <polygon class="crate-top" stroke="#34d399" points="0,-13 22,-2 0,9 -22,-2" />
+      <polyline class="crate-accent" points="5,18 9,23 16,14" />
+    </g>
+    <text class="mono st-title" x="0" y="58" text-anchor="middle">Test</text>
+  </g>
+
+  <!-- STATION 3: PACKAGE -->
+  <g transform="translate(545, 96)">
+    <polygon class="conveyor-top" points="0,-18 52,8 0,34 -52,8" />
+    <polygon class="conveyor-side-l" points="-52,8 0,34 0,44 -52,18" />
+    <polygon class="conveyor-side-r" points="0,34 52,8 52,18 0,44" />
+    <circle class="roller-dot" cx="-32" cy="22" r="1.5" />
+    <circle class="roller-dot" cx="-12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="32" cy="22" r="1.5" />
+
+    <g class="c-bob-3" transform="translate(0, -6)">
+      <polygon class="crate-side-l" points="-22,-2 0,9 0,30 -22,19" />
+      <polygon class="crate-side-r" points="0,9 22,-2 22,19 0,30" />
+      <polygon class="crate-top" points="0,-13 22,-2 0,9 -22,-2" />
+      <line x1="-11" y1="4" x2="-11" y2="25" stroke="#38bdf8" stroke-width="0.8" />
+      <line x1="11" y1="4" x2="11" y2="25" stroke="#38bdf8" stroke-width="0.8" />
+    </g>
+    <text class="mono st-title" x="0" y="58" text-anchor="middle">Package</text>
+  </g>
+
+  <!-- STATION 4: DEPLOY -->
+  <g transform="translate(750, 96)">
+    <polygon class="conveyor-top" stroke="#34d399" points="0,-18 52,8 0,34 -52,8" />
+    <polygon class="conveyor-side-l" points="-52,8 0,34 0,44 -52,18" />
+    <polygon class="conveyor-side-r" points="0,34 52,8 52,18 0,44" />
+    <circle class="roller-dot" cx="-32" cy="22" r="1.5" />
+    <circle class="roller-dot" cx="-12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="12" cy="32" r="1.5" />
+    <circle class="roller-dot" cx="32" cy="22" r="1.5" />
+
+    <g class="c-bob-4" transform="translate(0, -6)">
+      <polygon class="crate-side-l" stroke="#34d399" fill="#07171a" points="-22,-2 0,9 0,30 -22,19" />
+      <polygon class="crate-side-r" stroke="#34d399" fill="#0a1f22" points="0,9 22,-2 22,19 0,30" />
+      <polygon class="crate-top" stroke="#34d399" fill="#0d282c" points="0,-13 22,-2 0,9 -22,-2" />
+      <circle class="pulse-dot" cx="0" cy="-2" r="2.5" fill="#34d399" />
+      <polyline class="crate-accent" points="5,18 9,23 16,14" />
+    </g>
+    <text class="mono st-title" x="0" y="58" text-anchor="middle" fill="#34d399">Deploy</text>
+  </g>
+</svg>
