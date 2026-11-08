@@ -2,15 +2,18 @@
   <img src="./terminal.svg" alt="Waleed's Terminal System" width="100%" />
 </div>
 
+<br/>
 
-### Engineering Principles & Focus
-- **Architecture First:** Focused on scalable server workflows, robust data modelling, and modular full-stack codebases.
-- **TypeScript Ecosystems:** Building end-to-end type-safe applications leveraging Next.js, React, and Node.js.
-- **Systems & Performance:** Writing optimized logic with C++, structuring complex schemas in SQL, and automating development workflows on Linux.
+### About Me
+I am a Computer engineering student working on full-stack web development and systems programming. I focus on building practical tools, writing maintainable code, and understanding low-level fundamentals.
+
+- Building web applications with TypeScript, Next.js, and Node.js.
+- Designing databases and APIs with PostgreSQL, MySQL, and Prisma.
+- Writing low-level logic in C and C++, and working on Linux environments.
 
 ---
 
-### Open-Source Activity & Telemetry
+### Contributions
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/waleealedi/waleealedi/output/github-snake-dark.svg">
@@ -22,5 +25,5 @@
 ---
 
 <div align="right">
-  <sub>Network: <a href="https://bsky.app/profile/ws404">Bluesky</a> · <a href="https://instagram.com/ws404k">Instagram</a></sub>
+  <sub>Find me on: <a href="https://bsky.app/profile/ws404">Bluesky</a> · <a href="https://instagram.com/ws404k">Instagram</a></sub>
 </div>
