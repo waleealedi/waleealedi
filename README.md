@@ -13,6 +13,22 @@ I am a Computer Engineer working on full-stack web development and systems progr
 
 ---
 
+### Engineering Matrix
+
+| Project | Architecture & Stack | Focus & Implementation | Status |
+| :--- | :--- | :--- | :--- |
+| **[ANZAAD](https://anzaad.studio)** | Next.js · TypeScript · Tokens | Multi-Archetype Arabic design system, strict BiDi isolation & typography | `● active` |
+| **[MindDrop](https://github.com/waleealedi/minddrop)** | TypeScript · React · Local-First | Low-friction thought capture & deterministic state persistence | `● online` |
+| **[Systems / C-Runtime](https://github.com/waleealedi)** | C / C++ · Linux Kernel · POSIX | Custom memory allocators, core data structures & low-level CLI utilities | `● continuous` |
+
+---
+
+<div align="center">
+  <img src="./pipeline.svg" alt="Continuous CI/CD Pipeline" width="100%" />
+</div>
+
+---
+
 ### Contributions
 <div align="center">
   <picture>
