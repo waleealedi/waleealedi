@@ -1,8 +1,6 @@
 <div align="center">
-  <img src="./terminal.svg" alt="Waleed's Terminal System" width="100%" />
+  <img src="https://raw.githubusercontent.com/waleealedi/waleealedi/main/terminal.svg?v=1" alt="Waleed's Terminal System" width="100%" />
 </div>
-
-<br/>
 
 ### About Me
 I am a Computer engineering student working on full-stack web development and systems programming. I focus on building practical tools, writing maintainable code, and understanding low-level fundamentals.
