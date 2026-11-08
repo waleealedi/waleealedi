@@ -1,8 +1,7 @@
 <div align="center">
-  <img src="./assets/terminal.svg" alt="Waleed's Terminal System" width="100%" />
+  <img src="./terminal.svg" alt="Waleed's Terminal System" width="100%" />
 </div>
 
-<br/>
 
 ### Engineering Principles & Focus
 - **Architecture First:** Focused on scalable server workflows, robust data modelling, and modular full-stack codebases.
