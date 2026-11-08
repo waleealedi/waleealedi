@@ -4,6 +4,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="./architecture-stack.svg" alt="Systems Architecture Stack" width="100%" />
+</div>
+
+<br/>
+
 ### About Me
 I am a Computer Engineer working on full-stack web development and systems programming. I focus on building practical tools, writing maintainable code, and understanding low-level fundamentals.
 
